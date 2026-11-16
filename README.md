@@ -18,72 +18,19 @@ The project uses the following Python packages:
 - numpy 1.26.4
 - statsmodels 0.14.4
 See `requirements.txt` for the complete list of required packages.
-
-Required R packages (readxl, dplyr, purrr, tidywork, patchwork, and scales) are automatically installed if needed when 01_PowerPlantGenerationCalculation.R and 02_eda.R is run. Package versions will just be most recent upon installement. 
+ 
 
 ### Map of the Documentation
 
 The repository is organized as follows:
 ```text
-DS4002_Project2/
-├── LICENSE
-├── README.md
-├── data
-│   ├── CPIAUCSL.csv
-│   ├── Coolingdegree.txt
-│   ├── ElectricityPrice.csv
-│   ├── HeatingDegree.txt
-│   ├── NaturalGasPrice_HenryHub.xls
-│   ├── README.md
-│   ├── Temperature.csv
-│   ├── data.csv
-│   ├── generation_monthly.xlsx
-│   ├── monthly-spending-data-center-us (1)
-│   │   ├── monthly-spending-data-center-us.csv
-│   │   ├── monthly-spending-data-center-us.metadata.json
-│   │   └── readme.md
-│   └── us_monthly.csv
-├── output
-│   ├── 1_correlation_heatmap_R.png
-│   ├── 2_calendar_heatmap_R.png
-│   ├── 3_yoy_growth_R.png
-│   ├── accuracy_vs_goal.png
-│   ├── coefficients.png
-│   ├── electricity_prices_by_month.png
-│   ├── electricity_prices_over_time.png
-│   ├── forecast_sarima_12mo.csv
-│   ├── forecast_sarimax.csv
-│   ├── forecast_sarimax.png
-│   ├── holdout.png
-│   ├── holdout_results.csv
-│   ├── vif_check.png
-│   └── vif_table.csv
-├── requirements.txt
-└── scripts
-    ├── 01_PowerPlantGenerationCalculation.R
-    ├── 02_VIF.py
-    ├── 02_eda.R
-    ├── 02_eda.py
-    └── 03_sarimax_model_final.py
+D
 ```
 **Folder and File Descriptions**
 
 ### Folder and File Descriptions
 
-- `data/` — Contains the raw datasets and combined dataset used to analyze and predict monthly residential electricity prices.
-    - `README.md`: Documents the datasets, their sources, and their uses.
-    - `CPIAUCSL.csv`: Contains Consumer Price Index data.
-    - `Coolingdegree.txt`: Contains cooling degree day data.
-    - `ElectricityPrice.csv`: Contains monthly U.S. residential electricity price data.
-    - `HeatingDegree.txt`: Contains heating degree day data.
-    - `NaturalGasPrice_HenryHub.xls`: Contains Henry Hub natural gas price data.
-    - `Temperature.csv`: Contains temperature data used in the analysis.
-    - `data.csv`: Contains the combined monthly dataset used for exploratory analysis and forecasting.
-    - `generation_monthly.xlsx`: Contains electricity generation data used to calculate monthly U.S. totals.
-    - `us_monthly.csv`: Contains processed monthly U.S. electricity generation data.
-    - `monthly-spending-data-center-us (1)/`: Contains the data center spending dataset and its documentation.
-      - `monthly-spending-data-center-us.csv`: Contains monthly data center spending observations.
-      - `monthly-spending-data-center-us.metadata.json`: Contains metadata for the spending dataset.
+- `data/` — Contains the link to google drive with images already split that are used to train, validate, and test the CNN to classify unseen marine organisms
       - `readme.md`: Provides additional documentation for the spending dataset.
     - `README.md`: Provides additional documentation for the spending dataset.
 
