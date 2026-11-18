@@ -4,7 +4,7 @@ This repository contains the process for developing and running a MobileNetV2 CN
 ## Contents of the Repository
 ### Software and Platform
 
-- **IDE**: Visual Studio Code (VS Code)
+- **IDE**: Visual Studio Code (VS Code) & Google Colab
 - **OS**: Windows 11 or Mac OS 15.1.1 (Sequoia)
 - **Terminal**: VS Code Integrated Terminal or Windows PowerShell
 - **Programming Language**: Python
