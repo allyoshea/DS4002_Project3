@@ -35,17 +35,18 @@ D
 ### Folder and File Descriptions
 
 - `data/` — Contains the link to google drive with images already split that are used to train, validate, and test the CNN to classify unseen marine organisms
-      - `readme.md`: Provides additional documentation for the spending dataset.
-    - `README.md`: Provides additional documentation for the spending dataset.
+    - `Data Link`: Link to our Google Drive image dataset. When used with our mi2 Notebook script, produces the training, development, and test image sets.
+    - `README.md`: Provides additional documentation and instruction for the dataset.
 
 - `output/` — Contains figures generated during exploratory data analysis and model evaluation.
 
 - `scripts/` — Contains the scripts used to prepare data, conduct exploratory analysis, and fit and evaluate the SARIMAX model.
-    - `mi2_baseline.py`: Provides a random pretrained Mobilenetv2 model for comparison with our results.
+    - `mi2_baseline.ipynb`: Provides a random pretrained Mobilenetv2 model for comparison with our results.
     - `mi2.py`: Our model, along with its training weights and connection to the images in Google Drive.
 
 - `README.md` — Provides an overview of the project, its organization, software requirements, and instructions for reproducing the analysis.
 - `LICENSE` — Specifies the terms under which the project's code and other covered materials may be used, modified, and distributed.
+  
 ### Instructions for Reproducing the Results
 
 The following steps describe how to download the project, set up the Python environment, prepare the data, run the exploratory data analysis, and generate the model results.
