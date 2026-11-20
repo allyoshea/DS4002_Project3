@@ -48,3 +48,7 @@ The images used in this project were obtained from iNaturalist which retains rig
 | `Image` | The original image downloaded from iNaturalist | Image | Variable |
 | `Image (224 x 224)` | The image used in the model | Image | Medium |
 
+## Exploratory Plots
+<img width="1442" height="700" alt="image" src="https://github.com/user-attachments/assets/f6c7aeb4-5f76-4781-9cc4-04186281a31c" />
+
+<img width="1516" height="778" alt="image" src="https://github.com/user-attachments/assets/da4d7e6b-1bc5-4076-9af7-9bd7ca8b59d1" />
