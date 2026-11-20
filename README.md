@@ -28,7 +28,16 @@ See `requirements.txt` for the complete list of required packages.
 
 The repository is organized as follows:
 ```text
-D
+DS4002_Project3/
+├── LICENSE
+├── README.md
+├── data
+│   ├── Link to Google Drive
+│   └── readme.md
+├── output
+└── scripts
+    ├── mi2_baseline.ipynb
+    └── mi2.py
 ```
 **Folder and File Descriptions**
 
