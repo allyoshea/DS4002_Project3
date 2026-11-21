@@ -1,7 +1,7 @@
 # DS4002_Project3
 
 This repository contains the process for developing and running a MobileNetV2 CNN transfer-learning model with images to classify unseen marine organism images. 
-*CONTEXT HERE: did not get access to HPC until friday at arund 10:00am. As such I will attempt to use it for MI4 but did not have time to use is this time. 
+*CONTEXT HERE: did not get access to HPC until friday at arund 10:00am. As such I will attempt to use it for MI4 but did not have time to use it for this assignment. 
 ## Contents of the Repository
 ### Software and Platform
 
@@ -10,6 +10,7 @@ This repository contains the process for developing and running a MobileNetV2 CN
 - **Terminal**: VS Code Integrated Terminal or Windows PowerShell
 - **Programming Language**: Python
 - **Version Control / Repository**: GitHub
+- **Data Storage**: Google Drive
   
 #### Add-On Packages and Libraries
 
@@ -20,7 +21,7 @@ The project uses the following Python packages:
 - seaborn  0.13.2
 - tensorflow 2.21.0
 - scikit-learn 1.9.1
-- pillow 1.2.0
+- pillow 13.0.0
 See `requirements.txt` for the complete list of required packages.
  
 
@@ -64,7 +65,12 @@ DS4002_Project3/
 
 - `output/` — Contains figures generated during exploratory data analysis (EDA), model training, and model evaluation.
     - `EDA plots/`: Contains visualizations of dataset characteristics, including image availability, aspect ratios, heights, and resolutions.
-    - `MobileNetV2/`: Contains visualizations evaluating MobileNetV2 performance, including misclassified images, F1 scores, confusion matrices, precision, and recall.
+       -  `01_observation_availability.png`
+       -  `02_original_image_aspect_ratios.png`
+       -  `02_original_image_heights.png`
+       -  `02_original_image_resolutions.png`
+  - `MobileNetV2/`: Contains visualizations evaluating MobileNetV2 performance, including misclassified images, F1 scores, confusion matrices, precision, and recall.
+      - `
     - `CNN/`: Contains visualizations of the baseline CNN model's training accuracy and confusion matrix.
     - `11_organism_precision_comparison.png`: Compares classification precision across organism categories for both models.
     - `12_overall_accuracy_comparison.png`: Compares the overall test accuracy of both classification models.
