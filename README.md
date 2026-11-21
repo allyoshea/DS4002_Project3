@@ -111,7 +111,7 @@ The `scripts/` directory contains two Jupyter notebooks:
 For each notebook:
 
 1. Navigate to the `scripts/` directory in this GitHub repository.
-2. Open the desired `.ipynb` file and select **Open in Colab** (or download the notebook and upload it directly to [Google Colab](https://colab.research.google.com/)).
+2. Open the `01_MobileNetV2.ipynb` file and select **Open in Colab** (or download the notebook and upload it directly to [Google Colab](https://colab.research.google.com/)).
 3. Connect your Google account and authorize Google Drive access when prompted.
 4. Update the Google Drive folder path in the notebook, if necessary, to point to your copied dataset.
 5. Run all notebook cells in order by selecting **Runtime → Run all**.
@@ -122,7 +122,7 @@ Repeat these steps for the second notebook.
 
 Both notebooks train and evaluate their respective classification models using the same dataset. The notebooks generate visualizations and evaluation metrics to assess model performance, including accuracy, confusion matrices, precision, recall, and F1 scores.
 
-Generated figures and model results are automatically saved to the designated project folders in your Google Drive. The `output/` directory in this repository contains the figures generated for our final analysis.
+Generated figures and model results are automatically saved to the designated project folders in your Google Drive. The `output/` directory in this repository contains the figures generated for our final analysis and they should match the figures that are outputted into your google drive.
 
 The comparative visualizations evaluate MobileNetV2 performance against the baseline CNN using overall test accuracy and organism-level precision.
 
