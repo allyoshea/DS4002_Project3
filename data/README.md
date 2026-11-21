@@ -6,22 +6,16 @@ Our dataset contains images of 12 marine organism categories, including marine m
 
 Data files include:
 
-README.md: Describes the dataset, its sources, and its uses.
-
-Data Link: Contains the Google Drive link for the image dataset.
+- README.md: Describes the dataset, its sources, and its uses.
+- Data Link: Contains the Google Drive link for the image dataset.
 
 **IN the google drive are the following folders**
 
-Marine_Classification/train/: Contains 4,200 training images in 12 category folders.
-
-Marine_Classification/validation/: Contains 900 validation images in the same 12 category folders.
-
-Marine_Classification/test/: Contains 900 testing images in the same 12 category folders.
-
-Marine_Classification/failed_downloads.csv: Download error log. The supplied file is empty and contains no recorded failures.
-
-Marine_Classification/MobileNetV2/Figures: Contains data analysis figures (confusion matrices, precision, recall) and original data EDA plots
-
+- Marine_Classification/train/: Contains 4,200 training images in 12 category folders.
+- Marine_Classification/validation/: Contains 900 validation images in the same 12 category folders.
+- Marine_Classification/test/: Contains 900 testing images in the same 12 category folders.
+- Marine_Classification/failed_downloads.csv: Download error log. The supplied file is empty and contains no recorded failures.
+- Marine_Classification/MobileNetV2/Figures: Contains data analysis figures (confusion matrices, precision, recall) and original data EDA plots
 
 
 The downloaded data are RGB JPEG images with different dimensions. During model loading, the images are resized to 224 × 224 pixels and MobileNetV2 preprocessing scales their pixel values to −1 to 1. These model inputs are created in memory and a separate resized image collection is not stored in Drive.
