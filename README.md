@@ -16,11 +16,10 @@ The project uses the following Python packages:
 - pandas 2.2.2
 - matplotlib 3.8.4
 - numpy 1.26.4
-- statsmodels 0.14.4
-- seaborn
-- tensorflow
-- scikit-learn
-- pillow 
+- seaborn  0.13.2
+- tensorflow 2.21.0
+- scikit-learn 1.9.1
+- pillow 1.2.0
 See `requirements.txt` for the complete list of required packages.
  
 
