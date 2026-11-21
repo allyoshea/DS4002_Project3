@@ -9,7 +9,7 @@ Data files include:
 - README.md: Describes the dataset, its sources, and its uses.
 - Data Link: Contains the Google Drive link for the image dataset.
 
-**IN the google drive are the following folders**
+**IN the google drive are the following folders & files**
 
 - Marine_Classification/train/: Contains 4,200 training images in 12 category folders.
 - Marine_Classification/validation/: Contains 900 validation images in the same 12 category folders.
