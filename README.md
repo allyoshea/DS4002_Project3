@@ -32,196 +32,102 @@ DS4002_Project3/
 ├── LICENSE
 ├── README.md
 ├── data
-│   ├── Link to Google Drive
-│   └── readme.md
+│   ├── Data Link
+│   └── README.md
 ├── output
+│   ├── 11_organism_precision_comparison.png
+│   ├── 12_overall_accuracy_comparison.png
+│   ├── CNN
+│   │   ├── 09_cnn_accuracy.png
+│   │   └── 10_cnn_confusion_matrix.png
+│   ├── EDA plots
+│   │   ├── 01_observation_availability.png
+│   │   ├── 02_original_image_aspect_ratios.png
+│   │   ├── 02_original_image_heights.png
+│   │   └── 02_original_image_resolutions.png
+│   └── MobileNetV2
+│       ├── 03_misclassified_images.png
+│       ├── 04_f1_score_by_organism.png
+│       ├── 05_confusion_matrix_original.png
+│       ├── 06_precision_vs_recall.png
+│       ├── 07_precision_by_organism.png
+│       └── 08_confusion_matrix.png
 └── scripts
-    ├── mi2_baseline.ipynb
-    └── mi2.py
+    ├── 01_MobileNetV2.ipynb
+    └── 02_BaselineModel.ipynb
 ```
 **Folder and File Descriptions**
 
-### Folder and File Descriptions
+- `data/` — Contains the link to the Google Drive image dataset used to train, validate, and test the marine organism classification models.
+    - `Data Link`: Provides access to the Google Drive image dataset, which contains images already split into training, validation, and test sets.
+    - `README.md`: Provides additional documentation and instructions for accessing and using the dataset.
 
-- `data/` — Contains the link to google drive with images already split that are used to train, validate, and test the CNN to classify unseen marine organisms
-    - `Data Link`: Link to our Google Drive image dataset. When used with our mi2 Notebook script, produces the training, development, and test image sets.
-    - `README.md`: Provides additional documentation and instruction for the dataset.
+- `output/` — Contains figures generated during exploratory data analysis (EDA), model training, and model evaluation.
+    - `EDA plots/`: Contains visualizations of dataset characteristics, including image availability, aspect ratios, heights, and resolutions.
+    - `MobileNetV2/`: Contains visualizations evaluating MobileNetV2 performance, including misclassified images, F1 scores, confusion matrices, precision, and recall.
+    - `CNN/`: Contains visualizations of the baseline CNN model's training accuracy and confusion matrix.
+    - `11_organism_precision_comparison.png`: Compares classification precision across organism categories for both models.
+    - `12_overall_accuracy_comparison.png`: Compares the overall test accuracy of both classification models.
 
-- `output/` — Contains figures generated during exploratory data analysis and model evaluation.
+- `scripts/` — Contains the Jupyter notebooks used to prepare data, train, evaluate, and compare the marine organism classification models.
+    - `01_MobileNetV2.ipynb`: Implements the MobileNetV2 transfer learning model, including data preparation, model training, evaluation, and generation of performance visualizations.
+    - `02_BaselineModel.ipynb`: Implements a baseline convolutional neural network (CNN) for marine organism classification and evaluates its performance for comparison with MobileNetV2.
 
-- `scripts/` — Contains the scripts used to prepare data, conduct exploratory analysis, and fit and evaluate the SARIMAX model.
-    - `mi2_baseline.ipynb`: Provides a random pretrained Mobilenetv2 model for comparison with our results.
-    - `mi2.py`: Our model, along with its training weights and connection to the images in Google Drive.
+- `README.md` — Provides an overview of the project, its organization, software requirements, dataset access instructions, and steps for reproducing the analysis.
 
-- `README.md` — Provides an overview of the project, its organization, software requirements, and instructions for reproducing the analysis.
 - `LICENSE` — Specifies the terms under which the project's code and other covered materials may be used, modified, and distributed.
-  
+
 ### Instructions for Reproducing the Results
 
-The following steps describe how to download the project, set up the Python environment, prepare the data, run the exploratory data analysis, and generate the model results.
+The following steps describe how to access the dataset, run the classification models in Google Colab, and generate the results.
 
-#### Step 1: Download the Repository
+#### Step 1: Set Up the Dataset
 
-1. Navigate to the GitHub repository and click the green **Code** button. Copy the HTTPS URL:
+1. Navigate to the **Data Link** provided in the `data/` folder of this repository.
+2. Open the linked Google Drive folder containing the marine organism image dataset.
+3. Make a copy of the entire folder and save it to your own Google Drive.
+4. Keep the original folder organization, including the training, validation, and test image directories.
 
-   ```text
-   https://github.com/allyoshea/DS4002_Project2.git
-   ```
+#### Step 2: Open the Notebooks in Google Colab
 
-2. Open the Terminal application on your computer.
+The `scripts/` directory contains two Jupyter notebooks:
 
-3. Navigate to the location where you want to save the project, such as your Desktop:
+- `01_MobileNetV2.ipynb`: Implements the MobileNetV2 transfer learning model.
+- `02_BaselineModel.ipynb`: Implements the baseline convolutional neural network (CNN) for comparison.
 
-   ```bash
-   cd ~/Desktop
-   ```
+For each notebook:
 
-4. Clone the repository:
+1. Navigate to the `scripts/` directory in this GitHub repository.
+2. Open the desired `.ipynb` file and select **Open in Colab** (or download the notebook and upload it directly to [Google Colab](https://colab.research.google.com/)).
+3. Connect your Google account and authorize Google Drive access when prompted.
+4. Update the Google Drive folder path in the notebook, if necessary, to point to your copied dataset.
+5. Run all notebook cells in order by selecting **Runtime → Run all**.
 
-   ```bash
-   git clone https://github.com/allyoshea/DS4002_Project2.git
-   ```
+Repeat these steps for the second notebook.
 
-5. Navigate into the project folder:
+#### Step 3: Generate and Review the Results
 
-   ```bash
-   cd DS4002_Project2
-   ```
+Both notebooks train and evaluate their respective classification models using the same dataset. The notebooks generate visualizations and evaluation metrics to assess model performance, including accuracy, confusion matrices, precision, recall, and F1 scores.
 
-6. Open the `DS4002_Project2` folder in Visual Studio Code or another compatible coding environment.
+Generated figures and model results are automatically saved to the designated project folders in your Google Drive. The `output/` directory in this repository contains the figures generated for our final analysis.
 
-#### Step 2: Set Up the Python Environment
-
-The project uses Python for exploratory data analysis, SARIMAX modeling, and visualization. R is used to process the power plant generation data.
-
-1. In Visual Studio Code, select **Terminal → New Terminal** from the top menu.
-
-2. Confirm that the terminal is located in the `DS4002_Project2` directory.
-#### Step 2: Set Up the Python and R Environments
-
-The project uses Python for exploratory data analysis, SARIMAX modeling, and visualization. R is used to process power plant generation data and perform additional exploratory data analysis. Both languages can be run from the integrated terminal in Visual Studio Code.
-
-**Python setup**
-
-1. In Visual Studio Code, select **Terminal → New Terminal** from the top menu.
-2. Confirm that the terminal is located in the `DS4002_Project2` directory.
-3. Create a Python virtual environment:
-
-   ```bash
-   python3 -m venv .venv
-   ```
-
-4. Activate the virtual environment on macOS:
-
-   ```bash
-   source .venv/bin/activate
-   ```
-
-   On Windows PowerShell, use:
-
-   ```powershell
-   .venv\Scripts\Activate.ps1
-   ```
-
-5. Install the required Python packages:
-
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
-
-**R setup**
-
-R must be installed separately on your computer. You do not need to create a separate R environment to run this project. You can run R and Python scripts from the same VS Code terminal, even while the Python virtual environment is activated.
-
-The R scripts require the packages `readxl`, `dplyr`, and `purrr`. To install these packages, open an R console and run:
-
-```r
-install.packages(c("readxl", "dplyr", "purrr"))
-```
-
-After installing R and the required packages, you can run R scripts from the VS Code terminal using `Rscript`, just as you run Python scripts using `python`. For example:
-
-```bash
-Rscript scripts/01_PowerPlantGenerationCalculation.R
-```
-
-Make sure the terminal is open in the `DS4002_Project2` project directory before running the scripts.
-6. To run the power plant generation processing script, ensure that R is installed. The script uses the R packages `readxl`, `dplyr`, and `purrr`.
-
-#### Step 3: Prepare the Data and Run Exploratory Data Analysis
-
-The `data/` directory contains the source datasets and the combined dataset used for modeling.
-
-The R script `01_PowerPlantGenerationCalculation.R` processes monthly power plant generation data from the source Excel workbook, combines the relevant annual worksheets, standardizes the variables, and aggregates electricity generation by year and month. The script is expected to produce `data/us_monthly.csv`.
-
-If the required source workbook is available in the `data/` directory, run the script using:
-
-```bash
-Rscript scripts/01_PowerPlantGenerationCalculation.R
-```
-
-The combined dataset, `data/data.csv`, contains the residential electricity price data and selected predictor variables used by the SARIMAX model.
-
-To run the exploratory data analysis script, execute:
-
-```bash
-python scripts/02_eda.py
-pyton scripts/02_VIF.py
-Rscript scripts/02_eda.R
-```
-
-
-#### Step 4: Run the SARIMAX Model
-
-The SARIMAX modeling script is located in the `scripts/` directory. To run the model, execute:
-
-```bash
-python scripts/03_sarimax_price_model.py
-```
-
-
-The script fits the SARIMAX model using the combined dataset and generates forecast and diagnostic figures in the `output/` directory.
-
-
-If cross-validation is run and configured to save its results, the corresponding results file will also be saved in the `output/` directory.
-
-#### Step 5: Review the Results
-
-After running the scripts, the processed datasets will be located in the `data/` directory, and the generated figures will be located in the `output/` directory. Expected outputs for each scripts are labeled at the top of the respective scripts.
-
-The intended analysis covers monthly U.S. residential electricity prices from January 2015 through June 2026, depending on the observations available in the combined dataset. 
-The analysis considers the following nine potential predictors:
-
-- Data center spending
-- Crude oil prices
-- Inflation rate
-- Power plant generation
-- Retail sales
-- Average temperature
-- Natural gas prices (Henry Hub)
-- Heating degree days
-- Cooling degree days
-
-The resulting datasets, forecast plots, and diagnostic figures can be used to evaluate electricity price trends, seasonal patterns, and the potential contribution of external predictors to forecast accuracy.
+The comparative visualizations evaluate MobileNetV2 performance against the baseline CNN using overall test accuracy and organism-level precision.
 
 ### Project Workflow
 
 ```text
-Clone GitHub Repository
+Access Google Drive Dataset
         ↓
-Open Project in VS Code
+Make a Copy of the Dataset in Your Google Drive
         ↓
-Create and Activate Python and R Environments
+Open Jupyter Notebooks in Google Colab
         ↓
-Install Required Packages
+Connect Google Drive and Update Dataset Path
         ↓
-Verify the Combined Dataset
+Run MobileNetV2 Notebook
         ↓
-Run Exploratory Data Analysis
+Run Baseline CNN Notebook
         ↓
-Run SARIMAX Model and Evaluation
+Generate and Save Model Results to Google Drive
         ↓
-Review Forecasts and Diagnostic Figures
-```
-```
-## References
+Review Performance Metrics and Comparative Figures
