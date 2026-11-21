@@ -76,9 +76,11 @@ DS4002_Project3/
       - `06_precision_vs_recall.png` - Comparison of precision and recall across organism categories.
       - `07_precision_by_organism.png` - Precision scores for each marine organism category.
       - `08_confusion_matrix.png` - Confusion matrix showing the model's final test classification results
-    - `CNN/`: Contains visualizations of the baseline CNN model's training accuracy and confusion matrix.
-    - `11_organism_precision_comparison.png`: Compares classification precision across organism categories for both models.
-    - `12_overall_accuracy_comparison.png`: Compares the overall test accuracy of both classification models.
+  - `CNN/`: Contains visualizations of the baseline CNN model's training accuracy and confusion matrix.
+      - `09_cnn_accuracy.png` - Shows baseline CNN training and validation accuracy across epochs. 
+      - `10_cnn_confusion_matrix.png` - Displays the baseline CNN test set confusion matrix.
+    - `11_organism_precision_comparison.png`- Compares classification precision across organism categories for both models.
+    - `12_overall_accuracy_comparison.png`- Compares the overall test accuracy of both classification models.
 
 - `scripts/` — Contains the Jupyter notebooks used to prepare data, train, evaluate, and compare the marine organism classification models.
     - `01_MobileNetV2.ipynb`: Implements the MobileNetV2 transfer learning model, including data preparation, model training, evaluation, and generation of performance visualizations.
