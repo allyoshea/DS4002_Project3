@@ -32,12 +32,29 @@ DS4002_Project3/
 ├── LICENSE
 ├── README.md
 ├── data
-│   ├── Link to Google Drive
-│   └── readme.md
+│   ├── Data Link
+│   └── README.md
 ├── output
+│   ├── 11_organism_precision_comparison.png
+│   ├── 12_overall_accuracy_comparison.png
+│   ├── CNN
+│   │   ├── 09_cnn_accuracy.png
+│   │   └── 10_cnn_confusion_matrix.png
+│   ├── EDA plots
+│   │   ├── 01_observation_availability.png
+│   │   ├── 02_original_image_aspect_ratios.png
+│   │   ├── 02_original_image_heights.png
+│   │   └── 02_original_image_resolutions.png
+│   └── MobileNetV2
+│       ├── 03_misclassified_images.png
+│       ├── 04_f1_score_by_organism.png
+│       ├── 05_confusion_matrix_original.png
+│       ├── 06_precision_vs_recall.png
+│       ├── 07_precision_by_organism.png
+│       └── 08_confusion_matrix.png
 └── scripts
-    ├── mi2_baseline.ipynb
-    └── mi2.py
+    ├── 01_MobileNetV2.ipynb
+    └── 02_BaselineModel.ipynb
 ```
 **Folder and File Descriptions**
 
