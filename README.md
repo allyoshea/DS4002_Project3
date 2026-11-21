@@ -58,21 +58,24 @@ DS4002_Project3/
 ```
 **Folder and File Descriptions**
 
-### Folder and File Descriptions
+- `data/` — Contains the link to the Google Drive image dataset used to train, validate, and test the marine organism classification models.
+    - `Data Link`: Provides access to the Google Drive image dataset, which contains images already split into training, validation, and test sets.
+    - `README.md`: Provides additional documentation and instructions for accessing and using the dataset.
 
-- `data/` — Contains the link to google drive with images already split that are used to train, validate, and test the CNN to classify unseen marine organisms
-    - `Data Link`: Link to our Google Drive image dataset. When used with our mi2 Notebook script, produces the training, development, and test image sets.
-    - `README.md`: Provides additional documentation and instruction for the dataset.
+- `output/` — Contains figures generated during exploratory data analysis (EDA), model training, and model evaluation.
+    - `EDA plots/`: Contains visualizations of dataset characteristics, including image availability, aspect ratios, heights, and resolutions.
+    - `MobileNetV2/`: Contains visualizations evaluating MobileNetV2 performance, including misclassified images, F1 scores, confusion matrices, precision, and recall.
+    - `CNN/`: Contains visualizations of the baseline CNN model's training accuracy and confusion matrix.
+    - `11_organism_precision_comparison.png`: Compares classification precision across organism categories for both models.
+    - `12_overall_accuracy_comparison.png`: Compares the overall test accuracy of both classification models.
 
-- `output/` — Contains figures generated during exploratory data analysis and model evaluation.
+- `scripts/` — Contains the Jupyter notebooks used to prepare data, train, evaluate, and compare the marine organism classification models.
+    - `01_MobileNetV2.ipynb`: Implements the MobileNetV2 transfer learning model, including data preparation, model training, evaluation, and generation of performance visualizations.
+    - `02_BaselineModel.ipynb`: Implements a baseline convolutional neural network (CNN) for marine organism classification and evaluates its performance for comparison with MobileNetV2.
 
-- `scripts/` — Contains the scripts used to prepare data, conduct exploratory analysis, and fit and evaluate the SARIMAX model.
-    - `mi2_baseline.ipynb`: Provides a random pretrained Mobilenetv2 model for comparison with our results.
-    - `mi2.py`: Our model, along with its training weights and connection to the images in Google Drive.
+- `README.md` — Provides an overview of the project, its organization, software requirements, dataset access instructions, and steps for reproducing the analysis.
 
-- `README.md` — Provides an overview of the project, its organization, software requirements, and instructions for reproducing the analysis.
 - `LICENSE` — Specifies the terms under which the project's code and other covered materials may be used, modified, and distributed.
-  
 ### Instructions for Reproducing the Results
 
 The following steps describe how to download the project, set up the Python environment, prepare the data, run the exploratory data analysis, and generate the model results.
