@@ -130,4 +130,11 @@ Run Baseline CNN Notebook
         ↓
 Generate and Save Model Results to Google Drive
         ↓
-Review Performance Metrics and Comparative Figures
+Review Performance Metrics and Comparative Figures```
+
+**References**
+[1] X. Liu, Z. Jia, X. Hou, M. Fu, L. Ma, and Q. Sun, “Real-Time Marine Animal Images
+Classification by Embedded System Based on Mobilenet and Transfer Learning,” in
+OCEANS 2019 - Marseille, IEEE, June 2019, pp. 1–5. doi: 10.1109/oceanse.2019.8867190.
+[2] “iNaturalist,” iNaturalist. Accessed: Nov. 04, 2026. [Online]. Available:
+https://www.inaturalist.org/
