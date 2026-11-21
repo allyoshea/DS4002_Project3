@@ -65,12 +65,17 @@ DS4002_Project3/
 
 - `output/` — Contains figures generated during exploratory data analysis (EDA), model training, and model evaluation.
     - `EDA plots/`: Contains visualizations of dataset characteristics, including image availability, aspect ratios, heights, and resolutions.
-       -  `01_observation_availability.png`
-       -  `02_original_image_aspect_ratios.png`
-       -  `02_original_image_heights.png`
-       -  `02_original_image_resolutions.png`
+       -  `01_observation_availability.png` - distribution of available image observations across organism categories
+       -  `02_original_image_aspect_ratios.png` - Distribution of original image aspect ratios.
+       -  `02_original_image_heights.png` -  Distribution of original image heights. 
+       -  `02_original_image_resolutions.png` - Distribution of original image resolutions
   - `MobileNetV2/`: Contains visualizations evaluating MobileNetV2 performance, including misclassified images, F1 scores, confusion matrices, precision, and recall.
-      - `
+      - `03_misclassified_images.png` - Examples of test images incorrectly classified by MobileNetV2.
+      - `04_f1_score_by_organism.png` - F1 scores for each marine organism category.
+      - `05_confusion_matrix_original.png` - Confusion matrix showing the model's original test predictions
+      - `06_precision_vs_recall.png` - Comparison of precision and recall across organism categories.
+      - `07_precision_by_organism.png` - Precision scores for each marine organism category.
+      - `08_confusion_matrix.png` - Confusion matrix showing the model's final test classification results
     - `CNN/`: Contains visualizations of the baseline CNN model's training accuracy and confusion matrix.
     - `11_organism_precision_comparison.png`: Compares classification precision across organism categories for both models.
     - `12_overall_accuracy_comparison.png`: Compares the overall test accuracy of both classification models.
