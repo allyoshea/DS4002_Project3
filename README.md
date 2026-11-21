@@ -1,6 +1,7 @@
 # DS4002_Project3
 
 This repository contains the process for developing and running a MobileNetV2 CNN transfer-learning model with images to classify unseen marine organism images. 
+*CONTEXT HERE: did not get access to HPC until friday at arund 10:00am. As such I will attempt to use it for MI4 but did not have time to use is this time. 
 ## Contents of the Repository
 ### Software and Platform
 
