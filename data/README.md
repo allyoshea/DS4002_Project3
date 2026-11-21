@@ -46,3 +46,5 @@ The images used in this project were obtained from iNaturalist which retains rig
 <img width="1442" height="700" alt="image" src="https://github.com/user-attachments/assets/f6c7aeb4-5f76-4781-9cc4-04186281a31c" />
 
 <img width="1516" height="778" alt="image" src="https://github.com/user-attachments/assets/da4d7e6b-1bc5-4076-9af7-9bd7ca8b59d1" />
+
+<img width="1058" height="576" alt="Screenshot 2026-11-20 at 10 14 57 PM" src="https://github.com/user-attachments/assets/ceeeac22-c8ce-412d-908e-e5a3533017ac" />
